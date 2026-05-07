@@ -1,0 +1,61 @@
+<web-app>
+
+<!-- ADD -->
+<servlet>
+    <servlet-name>AddProduct</servlet-name>
+    <servlet-class>com.servlet.AddProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddProduct</servlet-name>
+    <url-pattern>/AddProductServlet</url-pattern>
+</servlet-mapping>
+
+<!-- DELETE -->
+<servlet>
+    <servlet-name>DeleteProduct</servlet-name>
+    <servlet-class>com.servlet.DeleteProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteProduct</servlet-name>
+    <url-pattern>/DeleteProductServlet</url-pattern>
+</servlet-mapping>
+
+<!-- UPDATE -->
+<servlet>
+    <servlet-name>UpdateProduct</servlet-name>
+    <servlet-class>com.servlet.UpdateProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateProduct</servlet-name>
+    <url-pattern>/UpdateProductServlet</url-pattern>
+</servlet-mapping>
+
+<!-- DISPLAY -->
+<servlet>
+    <servlet-name>DisplayProducts</servlet-name>
+    <servlet-class>com.servlet.DisplayProductsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DisplayProducts</servlet-name>
+    <url-pattern>/DisplayProductsServlet</url-pattern>
+</servlet-mapping>
+
+<!-- ✅ REPORT (ADD THIS PART) -->
+<servlet>
+    <servlet-name>ReportServlet</servlet-name>
+    <servlet-class>com.servlet.ReportServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ReportServlet</servlet-name>
+    <url-pattern>/ReportServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>ReportCriteria</servlet-name>
+    <servlet-class>com.servlet.ReportCriteriaServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ReportCriteria</servlet-name>
+    <url-pattern>/ReportCriteriaServlet</url-pattern>
+</servlet-mapping>
+</web-app>
